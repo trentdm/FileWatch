@@ -1,0 +1,11 @@
+﻿A couple of things I noted during the implementation of this project. 
+In a real world setting, would seek clarification or confirmation on these items before final implementation.
+
+Spec seemed to indicate a single directory being monitored, and not recursively monitoring, could confirm.
+Spec seemed to indicate that file name, not full path is to be written out on create/modify, could confirm.
+Handling of renaming files wasn't specifically mentioned, but treating as a delete/create event. Should clarify.
+Spec mentions that file names are case insensitive, code currently doesn't notify on case change. Should clarify.
+Case for handling the event of a modification, but no line count change wasn't entirely clear in instruction #6. 
+	Decided to output +{lineCount} just so it would be distinguishable from a creation that is just {lineCount}.
+Not entirely clear on whether program should report on current state of directory when first ran, spec seems to leave
+	it open, so currently writing out linecount on initial run, but can change easily. Should clarify.

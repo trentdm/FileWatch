@@ -1,0 +1,5 @@
+*.DotSettings.user
+FileWatch.Test/obj/*
+*.suo
+FileWatch/bin/*
+FileWatch/obj/*
